@@ -1,6 +1,4 @@
-import 'package:bookreaderflutter/colorsfile.dart';
-import 'package:bookreaderflutter/widget/book_rating.dart';
-import 'package:bookreaderflutter/widget/two_sided_rounded_button.dart';
+import 'package:flutteruiapp/widget/reading_card_list.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -42,136 +40,85 @@ class HomeScreen extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
-            ReadingListCard(
-              image: "images/book-1.png",
-              title: "Crushing & Influence",
-              auth: "Grey Venchuk",
-              rating: 4.9,
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class ReadingListCard extends StatelessWidget {
-  final String image;
-  final String title;
-  final String auth;
-  final double rating;
-  final Function pressDetails;
-  final Function pressRead;
-  const ReadingListCard({
-    Key key,
-    this.image,
-    this.title,
-    this.auth,
-    this.rating,
-    this.pressDetails,
-    this.pressRead,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(left: 24, bottom: 40),
-      height: 245,
-      width: 202,
-      child: Stack(
-        children: [
-          Positioned(
-            bottom: 0,
-            left: 10,
-            right: 0,
-            child: Container(
-              height: 221,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(29),
-                boxShadow: [
-                  BoxShadow(
-                    offset: Offset(0, 10),
-                    blurRadius: 33,
-                    color: kShadowColor,
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  ReadingListCard(
+                    image: "images/book-1.png",
+                    title: "Crushing & Influence",
+                    auth: "Grey Venchuk",
+                    rating: 4.9,
+                  ),
+                  ReadingListCard(
+                    image: "images/book-2.png",
+                    title: "Top Ten Business Hacks",
+                    auth: "Herman Joel",
+                    rating: 4.8,
                   ),
                 ],
               ),
             ),
-          ),
-          Image.asset(
-            image,
-            width: 150,
-          ),
-          Positioned(
-            top: 35,
-            right: 10,
-            child: Column(
-              children: [
-                IconButton(
-                  icon: Icon(Icons.favorite_border),
-                  onPressed: () {},
-                ),
-                BookRating(score: rating),
-              ],
-            ),
-          ),
-          Positioned(
-            top: 160,
-            child: Container(
-              height: 85,
-              width: 202,
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 24),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Padding(
-                    padding: EdgeInsets.only(left: 24),
-                    child: RichText(
-                      maxLines: 2,
-                      text: TextSpan(
-                        style: TextStyle(color: kBlackColor),
-                        children: [
-                          TextSpan(
-                            text: "$title\n",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          TextSpan(
-                            text: auth,
-                            style: TextStyle(
-                              color: kLightBlackColor,
-                            ),
-                          ),
-                        ],
+                  RichText(
+                    text: TextSpan(children: [
+                      TextSpan(
+                          style: Theme.of(context).textTheme.display1,
+                          text: "Best of the "),
+                      TextSpan(
+                        text: "day",
+                        style: TextStyle(fontWeight: FontWeight.bold),
                       ),
+                    ]),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 20),
+                    width: double.infinity,
+                    height: 120,
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          bottom: 0,
+                          left: 0,
+                          child: Container(
+                            padding: EdgeInsets.only(
+                                left: 24,
+                                top: 24,
+                                right: size.width * .35),
+                            height: 185,
+                            width: MediaQuery.of(context).size.width,
+                            decoration: BoxDecoration(
+                              color: Color(0xFFEAEAEA).withOpacity(.43),
+                              borderRadius: BorderRadius.circular(29),
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("New York Time Best For 11th March 2020"),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Positioned(
+                          right: 0,
+                          top: 0,
+                          child: Image.asset(
+                            "images/book-3.png",
+                            width: size.width * .27,
+                          ),
+                        )
+                      ],
                     ),
-                  ),
-                  Spacer(),
-                  Row(
-                    children: [
-                      GestureDetector(
-                        onTap: pressDetails,
-                        child: Container(
-                          width: 101,
-                          padding: EdgeInsets.symmetric(vertical: 10),
-                          alignment: Alignment.center,
-                          child: Text("Details"),
-                        ),
-                      ),
-                      Expanded(
-                        child: TwoSideRoundedButton(
-                          text: "Read",
-                          press: pressRead,
-                        ),
-                      )
-                    ],
-                  ),
+                  )
                 ],
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

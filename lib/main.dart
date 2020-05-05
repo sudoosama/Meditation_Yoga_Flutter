@@ -1,5 +1,5 @@
-import 'package:bookreaderflutter/screens/home_screen.dart';
-import 'package:bookreaderflutter/widget/rounded_button.dart';
+import 'package:flutteruiapp/screens/home_screen.dart';
+import 'package:flutteruiapp/widget/rounded_button.dart';
 import 'package:flutter/material.dart';
 import 'colorsfile.dart';
 

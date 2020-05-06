@@ -1,7 +1,6 @@
-import 'package:flutteruiapp/screens/home_screen.dart';
-import 'package:flutteruiapp/widget/rounded_button.dart';
+import 'package:testing/screens/home_screen.dart';
+import 'package:testing/widget/rounded_button.dart';
 import 'package:flutter/material.dart';
-import 'colorsfile.dart';
 
 void main() {
   runApp(MyApp());

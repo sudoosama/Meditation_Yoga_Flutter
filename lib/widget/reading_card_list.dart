@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutteruiapp/colorsfile.dart';
-import 'package:flutteruiapp/widget/book_rating.dart';
-import 'package:flutteruiapp/widget/two_sided_rounded_button.dart';
+import 'package:testing/colorsfile.dart';
+import 'package:testing/widget/book_rating.dart';
+import 'package:testing/widget/two_sided_rounded_button.dart';
 
 
 class ReadingListCard extends StatelessWidget {

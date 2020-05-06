@@ -1,5 +1,5 @@
-import 'package:flutteruiapp/colorsfile.dart';
 import 'package:flutter/material.dart';
+import 'package:testing/colorsfile.dart';
 
 class TwoSideRoundedButton extends StatelessWidget {
   final String text;

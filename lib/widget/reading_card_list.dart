@@ -105,12 +105,12 @@ class ReadingListCard extends StatelessWidget {
                           width: 101,
                           padding: EdgeInsets.symmetric(vertical: 10),
                           alignment: Alignment.center,
-                          child: Text("Details"),
+                          child: Text(" Details"),
                         ),
                       ),
                       Expanded(
                         child: TwoSideRoundedButton(
-                          text: "Read",
+                          text: "Start",
                           press: pressRead,
                         ),
                       )

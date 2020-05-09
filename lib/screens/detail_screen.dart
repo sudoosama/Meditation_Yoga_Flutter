@@ -41,32 +41,32 @@ class DetailsScreen extends StatelessWidget {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.only(top: size.height * .4 + 60),
+                      EdgeInsetsDirectional.only(top: size.height * .4 + 20),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       ChapterCard(
-                        name: "Money",
+                        name: "Mrigi Mudra",
                         chapterNumber: 1,
-                        tag: "Life is about change",
+                        tag: "Beginning pranayama students",
                         press: () {},
                       ),
                       ChapterCard(
-                        name: "Power",
+                        name: "Right Nostril",
                         chapterNumber: 2,
-                        tag: "Everything loves power",
+                        tag: "Left nostril with ring-little fingers",
                         press: () {},
                       ),
                       ChapterCard(
-                        name: "Influence",
+                        name: "Nostril Open",
                         chapterNumber: 3,
-                        tag: "Influence easily life is about change",
+                        tag: "Open and exhale slowly through the left",
                         press: () {},
                       ),
                       ChapterCard(
-                        name: "Win",
+                        name: "Nadi Shodhana",
                         chapterNumber: 4,
-                        tag: "Winning is what matters",
+                        tag: "Ratio breathing, Seed mantras",
                         press: () {},
                       ),
                       SizedBox(
@@ -127,13 +127,13 @@ class DetailsScreen extends StatelessWidget {
                                   children: [
                                     TextSpan(
                                       text:
-                                          "How To Win \nFriend & Influence \n",
+                                          "Supported Headstand\n",
                                       style: TextStyle(
                                         fontSize: 20,
                                       ),
                                     ),
                                     TextSpan(
-                                      text: "Gary Venchuk",
+                                      text: "Maven",
                                       style: TextStyle(color: kBlackColor),
                                     ),
                                   ],
@@ -149,7 +149,7 @@ class DetailsScreen extends StatelessWidget {
                                   ),
                                   Expanded(
                                       child: RoundedButton(
-                                    text: "Read",
+                                    text: "Start",
                                     verticalPadding: 10,
                                   ))
                                 ],
@@ -162,7 +162,7 @@ class DetailsScreen extends StatelessWidget {
                         top: 0,
                         right: 0,
                         child: Image.asset(
-                          "images/book-3.png",
+                          "images/mm3.png",
                           width: 150,
                         ),
                       )
@@ -222,7 +222,7 @@ class ChapterCard extends StatelessWidget {
             text: TextSpan(
               children: [
                 TextSpan(
-                  text: "Chapter $chapterNumber : $name \n",
+                  text: "Step $chapterNumber : $name \n",
                   style: TextStyle(
                     fontSize: 16,
                     color: kBlackColor,
@@ -264,11 +264,11 @@ class BookInfo extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Crushing &",
+                "Cleaning",
                 style: Theme.of(context).textTheme.display1,
               ),
               Text(
-                "Influence",
+                "Breathing",
                 style: Theme.of(context)
                     .textTheme
                     .display1
@@ -284,7 +284,7 @@ class BookInfo extends StatelessWidget {
                     child: Column(
                       children: [
                         Text(
-                          "When the earth was flat and everyone wanted to find the good friend and winning with an A game of with all the things you have.",
+                          "I bought my first Moleskine freshman year of college. The hard cover and smooth pages gave this organization-loving Virgo a jolt of excitement.",
                           maxLines: 5,
                           style: TextStyle(
                             fontSize: 10,
@@ -295,7 +295,7 @@ class BookInfo extends StatelessWidget {
                           height: 5,
                         ),
                         RoundedButton(
-                          text: "Read",
+                          text: "Asana",
                           verticalPadding: 10,
                         )
                       ],
@@ -316,7 +316,7 @@ class BookInfo extends StatelessWidget {
           ),
         ),
         Image.asset(
-          'images/book-1.png',
+          'images/mm2.png',
           height: 200,
         ),
       ],

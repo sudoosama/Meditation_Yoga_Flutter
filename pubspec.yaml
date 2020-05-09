@@ -52,6 +52,17 @@ flutter:
     - images/book-2.png
     - images/book-3.png
     - images/main_page_bg.png
+    - images/bg.jpg
+    - images/m1.jpg
+    - images/m2.jpg
+    - images/m3.jpg
+    - images/mm1.png
+    - images/mm2.png
+    - images/mm3.png
+    - images/mm4.png
+    - images/mm6.jpg
+
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
                         style: Theme.of(context).textTheme.display1,
                         children: [
                           TextSpan(
-                              text: "What are you \nreading ",
+                              text: "What is you're \nasana ",
                               style: TextStyle(
                                 fontSize: 30,
                               )),
@@ -58,9 +58,9 @@ class HomeScreen extends StatelessWidget {
                     child: Row(
                       children: [
                         ReadingListCard(
-                          image: "images/book-1.png",
-                          title: "Crushing & Influence",
-                          auth: "Grey Venchuk",
+                          image: "images/mm2.png",
+                          title: "Channel-Cleaning Breath",
+                          auth: "by: sudo Osama",
                           rating: 4.9,
                           pressDetails: () {
                             Navigator.push(
@@ -74,8 +74,8 @@ class HomeScreen extends StatelessWidget {
                           },
                         ),
                         ReadingListCard(
-                          image: "images/book-2.png",
-                          title: "Top Ten Business Hacks",
+                          image: "images/mm1.png",
+                          title: "Extended Side Angle Pose",
                           auth: "Herman Joel",
                           rating: 4.8,
                         ),
@@ -105,13 +105,16 @@ class HomeScreen extends StatelessWidget {
                               ]),
                         ),
                         bestOfTheDayCard(size, context),
+                        SizedBox(
+                          height: 15,
+                        ),
                         RichText(
                           text: TextSpan(
                             style: Theme.of(context).textTheme.display1,
                             children: [
-                              TextSpan(text: "Continue "),
+                              TextSpan(text: "Relax "),
                               TextSpan(
-                                text: "reading...",
+                                text: "melodies...",
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                             ],
@@ -121,7 +124,7 @@ class HomeScreen extends StatelessWidget {
                           height: 20,
                         ),
                         Container(
-                          height: 80,
+                          height: 100,
                           width: MediaQuery.of(context).size.width,
                           decoration: BoxDecoration(
                               color: Colors.white,
@@ -141,7 +144,7 @@ class HomeScreen extends StatelessWidget {
                                 Expanded(
                                   child: Padding(
                                     padding: const EdgeInsets.only(
-                                       left: 30,right: 20),
+                                        left: 30, right: 20),
                                     child: Row(
                                       children: [
                                         Expanded(
@@ -152,22 +155,51 @@ class HomeScreen extends StatelessWidget {
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Text(
-                                                "Crushing & Influence",
+                                                "Dropping into the Present Moment",
                                                 style: TextStyle(
                                                     fontWeight:
                                                         FontWeight.bold),
                                               ),
                                               Text(
-                                                "Gary Venchuk",
+                                                "14 min",
                                                 style: TextStyle(
                                                   color: kLightBlackColor,
                                                 ),
+                                              ),
+                                              Row(
+                                                children: [
+                                                  Icon(
+                                                    Icons.queue_music,
+                                                    size: 15,
+                                                  ),
+                                                  SizedBox(
+                                                    width: 60,
+                                                  ),
+                                                  Icon(
+                                                    Icons.skip_previous,
+                                                    size: 20,
+                                                  ),
+                                                  SizedBox(
+                                                    width: 10,
+                                                  ),
+                                                  Icon(
+                                                    Icons.pause_circle_outline,
+                                                    size: 20,
+                                                  ),
+                                                  SizedBox(
+                                                    width: 10,
+                                                  ),
+                                                  Icon(
+                                                    Icons.skip_next,
+                                                    size: 20,
+                                                  ),
+                                                ],
                                               ),
                                               Align(
                                                 alignment:
                                                     Alignment.bottomRight,
                                                 child: Text(
-                                                  "Chapter 7 of 10",
+                                                  "Next: Body Scan",
                                                   style: TextStyle(
                                                     fontSize: 10,
                                                     color: kLightBlackColor,
@@ -181,7 +213,7 @@ class HomeScreen extends StatelessWidget {
                                           ),
                                         ),
                                         Image.asset(
-                                          "images/book-1.png",
+                                          "images/mm6.jpg",
                                           width: 55,
                                         )
                                       ],
@@ -217,7 +249,7 @@ class HomeScreen extends StatelessWidget {
 
   Container bestOfTheDayCard(Size size, BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 20),
+      margin: EdgeInsets.symmetric(vertical: 10),
       width: double.infinity,
       height: 205,
       child: Stack(
@@ -229,7 +261,7 @@ class HomeScreen extends StatelessWidget {
             child: Container(
               padding:
                   EdgeInsets.only(left: 24, top: 24, right: size.width * .35),
-              height: 185,
+              height: 195,
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                 color: Color(0xFFEAEAEA).withOpacity(.43),
@@ -239,7 +271,7 @@ class HomeScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "New York Time Best For 11th March 2020",
+                    "Live a more expressive life with this connective practice.",
                     style: TextStyle(
                       fontSize: 11,
                       color: kLightBlackColor,
@@ -249,11 +281,11 @@ class HomeScreen extends StatelessWidget {
                     height: 5,
                   ),
                   Text(
-                    "How To Win \nFriend & Influence",
+                    "Simple Meditation Ignite Creativity",
                     style: Theme.of(context).textTheme.title,
                   ),
                   Text(
-                    "Grey Venchur",
+                    "Hassan Osama",
                     style: TextStyle(
                       color: kLightBlackColor,
                     ),
@@ -269,8 +301,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                       Expanded(
                         child: Text(
-                          "When the earth was flat and everyone wanted to win "
-                          "the game of the best and people...",
+                          "I bought my first Moleskine freshman year of college. The hard cover and smooth pages gave this organization-loving Virgo a jolt of excitement.",
                           maxLines: 3,
                           overflow: TextOverflow.ellipsis,
                           style: TextStyle(
@@ -286,11 +317,11 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           Positioned(
-            right: 0,
-            top: 0,
+            right: -27,
+            top: -7,
             child: Image.asset(
-              "images/book-3.png",
-              width: size.width * .27,
+              "images/mm4.png",
+              width: size.width * .40,
             ),
           ),
           Positioned(
@@ -300,7 +331,7 @@ class HomeScreen extends StatelessWidget {
               height: 40,
               width: size.width * .3,
               child: TwoSideRoundedButton(
-                text: "Read",
+                text: "Start",
                 radius: 24,
                 press: () {},
               ),

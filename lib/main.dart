@@ -32,7 +32,7 @@ class WelcomeScreen extends StatelessWidget {
         width: double.infinity,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("images/Bitmap.png"),
+            image: AssetImage("images/bg.jpg"),
             fit: BoxFit.fill,
           ),
         ),
@@ -44,10 +44,10 @@ class WelcomeScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.display3,
                 children: [
                   TextSpan(
-                    text: "flamin",
+                    text: "Medit & ",
                   ),
                   TextSpan(
-                    text: "go.",
+                    text: "Yoga.",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ],
@@ -56,7 +56,7 @@ class WelcomeScreen extends StatelessWidget {
             SizedBox(
               width: MediaQuery.of(context).size.width * .5,
               child: RoundedButton(
-                text: "start reading",
+                text: "start relaxing",
                 fontSize: 20,
                 press: () {
                   Navigator.push(

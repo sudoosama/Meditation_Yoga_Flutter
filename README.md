@@ -1,5 +1,5 @@
-# Book Reading App Flutter
-![](images/gitimage.png)
+# Meditation and Yoga Flutter
+![](images/medityogaapp.JPG)
 
 
 

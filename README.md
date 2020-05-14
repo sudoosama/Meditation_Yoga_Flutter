@@ -11,5 +11,4 @@ cd MeditationYogaFlutter
 ```
 
 
-* Follow me on [Twitter](https://twitter.com/whatosama) 
-
+* Follow me on [Twitter](https://twitter.com/sudoosama) 
